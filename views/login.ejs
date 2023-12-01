@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup </title>
+</head>
+
+<body>
+    <% if (locals.error) { %>
+        <p id="errorMessage">Error: <%= locals.error %></p>
+        <script>
+          const errorMessage = document.getElementById('errorMessage').innerText;
+          if (errorMessage) {
+            alert(errorMessage);
+          }
+        </script>
+      <% } else { %>
+       
+      <% } %>
+   <H1> This is a signup page</H1>
+   <form method="POST" action="/user/login">
+  
+    <label>Email</label>
+    <input type="text" name="email" placeholder="Email">
+    <label>Password</label>
+    <input type="text" name="password" placeholder="Password">
+    <button type="submit" id="signupButton">Login</button>
+   </form>
+
+
+</body>
+
+</html>
