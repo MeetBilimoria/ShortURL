@@ -32,7 +32,7 @@ app.use(express.urlencoded({extended:false}))
 // Routes
 
 app.use("/url" , urlrouter)
-app.use("/static",staticRoutes)
+app.use("/",staticRoutes)
 app.use("/user",userRoutes)
 
 
@@ -41,5 +41,5 @@ app.use("/user",userRoutes)
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server started at http://localhost:${port}`);
+  console.log(`Server started at http://localhost:${port}/login`);
 });

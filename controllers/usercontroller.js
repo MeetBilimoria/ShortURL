@@ -14,7 +14,7 @@
             error:"invalid user or password"
         })
         
-        return res.redirect("/static/allurl")
+        return res.redirect("/allurl")
       
     }
 
